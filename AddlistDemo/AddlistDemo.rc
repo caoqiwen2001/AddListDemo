@@ -1,0 +1,405 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\AddlistDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AddlistDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADDLISTDEMO_DIALOG DIALOGEX 0, 0, 314, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "通讯录系统"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,112,61,28,8
+    LTEXT           "密码：",IDC_STATIC,117,86,22,8
+    PUSHBUTTON      "登录",IDC_BUTTON2,91,138,50,14
+    EDITTEXT        IDC_EDIT1,157,54,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,158,83,79,14,ES_PASSWORD | ES_AUTOHSCROLL,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "退出",IDC_BUTTON3,211,139,50,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 316, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "我的通讯录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,156,50,14
+    PUSHBUTTON      "取消",2,259,156,50,14
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 357, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分组信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",2,266,178,50,14
+    PUSHBUTTON      "增加",IDC_BUTTON1,20,177,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON2,101,177,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON3,179,178,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,343,150
+    GROUPBOX        "",IDC_STATIC,7,169,326,27
+END
+
+IDD_ADDLISTGROUPADD DIALOGEX 0, 0, 214, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加分组"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,93,126,50,14
+    PUSHBUTTON      "关闭",2,157,126,50,14
+    LTEXT           "分组名称",IDC_STATIC,30,26,28,8
+    EDITTEXT        IDC_EDIT1,89,25,75,14,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,31,54,15,8
+    EDITTEXT        IDC_EDIT2,89,50,76,50,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 242, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分组详细信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,101,150,50,14
+    PUSHBUTTON      "取消",2,172,149,50,14
+    LTEXT           "分组编号",IDC_STATIC,26,30,33,8
+    LTEXT           "分组名称",IDC_STATIC,27,54,33,8
+    LTEXT           "备注",IDC_STATIC,31,78,17,8
+    EDITTEXT        IDC_EDIT1,99,29,80,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,99,51,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,99,74,80,49,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_FORMCONTACTLIST DIALOGEX 0, 0, 359, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "联系人信息"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "修改",IDOK,190,194,50,14
+    PUSHBUTTON      "取消",2,266,195,50,14
+    COMBOBOX        IDC_COMBO1,89,19,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,153,18,90,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON1,265,18,50,14
+    LTEXT           "选择查询条件",IDC_STATIC,29,21,42,8
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,47,329,133
+    GROUPBOX        "查询",IDC_STATIC,16,7,323,31
+    DEFPUSHBUTTON   "增加",IDOK2,37,193,50,14
+    DEFPUSHBUTTON   "删除",IDOK3,113,193,50,14
+    GROUPBOX        "",IDC_STATIC,27,184,299,29
+END
+
+IDD_FORMCONTACTADD DIALOGEX 0, 0, 335, 232
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新增联系人"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,110,202,50,14
+    PUSHBUTTON      "取消",2,205,202,50,14
+    LTEXT           "姓名",IDC_STATIC,16,17,15,8
+    EDITTEXT        IDC_EDIT1,38,15,70,14,ES_AUTOHSCROLL
+    LTEXT           "手机",IDC_STATIC,142,18,15,8
+    EDITTEXT        IDC_EDIT2,175,16,101,14,ES_AUTOHSCROLL
+    LTEXT           "QQ",IDC_STATIC,16,39,11,8
+    EDITTEXT        IDC_EDIT3,38,34,70,14,ES_AUTOHSCROLL
+    LTEXT           "电子邮件",IDC_STATIC,145,38,28,8
+    EDITTEXT        IDC_EDIT5,176,34,101,14,ES_AUTOHSCROLL
+    LTEXT           "工作单位",IDC_STATIC,14,61,28,8
+    EDITTEXT        IDC_EDIT4,45,58,239,14,ES_AUTOHSCROLL
+    LTEXT           "家庭住址",IDC_STATIC,15,103,28,8
+    EDITTEXT        IDC_EDIT6,54,81,70,14,ES_AUTOHSCROLL
+    LTEXT           "家庭电话",IDC_STATIC,141,86,28,8
+    EDITTEXT        IDC_EDIT7,183,83,100,14,ES_AUTOHSCROLL
+    LTEXT           "单位电话",IDC_STATIC,14,86,28,8
+    EDITTEXT        IDC_EDIT8,54,99,228,14,ES_AUTOHSCROLL
+    LTEXT           "所在分组",IDC_STATIC,16,129,28,8
+    COMBOBOX        IDC_COMBO1,51,126,60,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "备注",IDC_STATIC,22,153,15,8
+    EDITTEXT        IDC_EDIT9,51,153,232,34,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_FORMCONTACTDETAIL DIALOGEX 0, 0, 355, 265
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "联系人详细信息"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,100,239,50,14
+    PUSHBUTTON      "关闭",2,243,238,50,14
+    EDITTEXT        IDC_EDIT1,71,20,69,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,234,20,69,14,ES_AUTOHSCROLL
+    LTEXT           "自动编号",IDC_STATIC,16,23,28,8
+    LTEXT           "姓名",IDC_STATIC,209,24,15,8
+    EDITTEXT        IDC_EDIT3,71,45,69,14,ES_AUTOHSCROLL
+    LTEXT           "手机",IDC_STATIC,23,49,15,8
+    LTEXT           "电子邮件",IDC_STATIC,188,48,28,8
+    EDITTEXT        IDC_EDIT4,230,45,77,14,ES_AUTOHSCROLL
+    LTEXT           "工作单位",IDC_STATIC,19,69,28,8
+    EDITTEXT        IDC_EDIT5,71,65,233,14,ES_AUTOHSCROLL
+    LTEXT           "单位电话",IDC_STATIC,18,90,28,8
+    EDITTEXT        IDC_EDIT6,70,86,69,14,ES_AUTOHSCROLL
+    LTEXT           "家庭电话",IDC_STATIC,197,94,28,8
+    EDITTEXT        IDC_EDIT7,234,93,69,14,ES_AUTOHSCROLL
+    LTEXT           "家庭住址",IDC_STATIC,18,117,28,8
+    EDITTEXT        IDC_EDIT8,70,113,233,14,ES_AUTOHSCROLL
+    LTEXT           "QQ",IDC_STATIC,27,142,11,8
+    EDITTEXT        IDC_EDIT10,70,138,86,14,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,24,174,15,8
+    EDITTEXT        IDC_EDIT9,69,174,235,44,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AddlistDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "AddlistDemo.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADDLISTDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_ADDLISTGROUPADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_FORMCONTACTLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_FORMCONTACTADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_FORMCONTACTDETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "联系人管理"
+    BEGIN
+        MENUITEM "联系人列表",                       ID_32772
+        MENUITEM "增加联系人",                       ID_32773
+    END
+    POPUP "分组管理"
+    BEGIN
+        MENUITEM "分组列表",                        ID_GropList
+        MENUITEM "增加分组",                        ID_32775
+    END
+    POPUP "系统管理"
+    BEGIN
+        MENUITEM "修改密码",                        ID_32776
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                          ID_32777
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    VK_RETURN,      ID_ACCELERATOR32779,    VIRTKEY, NOINVERT
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\AddlistDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
